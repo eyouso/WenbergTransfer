@@ -1,5 +1,7 @@
 <%- include("partials/header.ejs") %>
 
+<!-- Header -->
+
 <div class="px-4 py-5 my-5 text-center">
   <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
   <h1 class="display-3 fw-bold text-body-emphasis">Wenberg Transfer</h1>
@@ -10,36 +12,55 @@
       <% } %>
 </div>
 
-<div id="myCarousel" class="carousel slide mb-6 pointer-event" data-bs-ride="carousel">
+
+<!-- Carousel -->
+
+<div id="myCarousel" class="carousel slide mb-6 pointer-event col-lg-6 col-md-8 col-sm-12" data-bs-ride="carousel" style="margin: auto;">
   <div class="carousel-inner">
+    <!-- First image as the active carousel item -->
     <div class="carousel-item active">
-      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-      <div class="container">
-        <div class="carousel-caption text-start">
-          <h1>Example headline.</h1>
-          <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-        </div>
+      <img src="/assets/FiveTrucks.jpeg" class="d-block w-100" alt="Five Wenberg Trucks">
+      <div class="carousel-caption text-start">
+        <h1>First Image Caption</h1>
+        <p>Some representative placeholder content for the first slide.</p>
       </div>
     </div>
+    
+    <!-- Add more images here -->
     <div class="carousel-item">
-      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-      <div class="container">
-        <div class="carousel-caption">
-          <h1>Another example headline.</h1>
-          <p>Some representative placeholder content for the second slide of the carousel.</p>
-        </div>
+      <img src="/assets/JJLogs.jpeg" class="d-block w-100" alt="John Senior and a truck hauling logs">
+      <div class="carousel-caption">
+        <h1>Second Image Caption</h1>
+        <p>Some representative placeholder content for the second slide.</p>
       </div>
     </div>
+    
     <div class="carousel-item">
-      <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-      <div class="container">
-        <div class="carousel-caption text-end">
-          <h1>One more for good measure.</h1>
-          <p>Some representative placeholder content for the third slide of this carousel.</p>
-        </div>
+      <img src="/assets/Johns.jpeg" class="d-block w-100" alt="John Wenberg junior and senior together">
+      <div class="carousel-caption text-end">
+        <h1>Third Image Caption</h1>
+        <p>Some representative placeholder content for the third slide.</p>
       </div>
     </div>
+    
+    <!-- Repeat for as many images as you have -->
   </div>
+
+  
+  <!-- Carousel controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+  <!-- Carousel Controls -->
   <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
@@ -52,34 +73,30 @@
 
 <div class="container marketing mt-5">
 
- <!-- Four columns of text below the carousel -->
+ <!-- Important people in the company -->
 <div class="row">
   <div class="col-lg-3">
     <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-    <h2 class="fw-normal">Heading</h2>
+    <h2 class="fw-normal">Sigurd Wenberg</h2>
     <p>Some representative placeholder content for the first column.</p>
-    <p><a class="btn btn-secondary" href="#">View details »</a></p>
   </div><!-- /.col-lg-3 -->
   
   <div class="col-lg-3">
     <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-    <h2 class="fw-normal">Heading</h2>
+    <h2 class="fw-normal">John Wenberg, Sr.</h2>
     <p>Some representative placeholder content for the second column.</p>
-    <p><a class="btn btn-secondary" href="#">View details »</a></p>
   </div><!-- /.col-lg-3 -->
   
   <div class="col-lg-3">
     <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-    <h2 class="fw-normal">Heading</h2>
+    <h2 class="fw-normal">John Wenberg, Jr.</h2>
     <p>Some representative placeholder content for the third column.</p>
-    <p><a class="btn btn-secondary" href="#">View details »</a></p>
   </div><!-- /.col-lg-3 -->
   
   <div class="col-lg-3">
     <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-    <h2 class="fw-normal">Heading</h2>
+    <h2 class="fw-normal">Clayton Wenberg</h2>
     <p>Some representative placeholder content for the fourth column.</p>
-    <p><a class="btn btn-secondary" href="#">View details »</a></p>
   </div><!-- /.col-lg-3 -->
 </div><!-- /.row -->
 
@@ -91,8 +108,8 @@
 
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-      <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+      <h2 class="featurette-heading fw-normal lh-1">Humble Beginnings</h2>
+      <p class="lead">This is how Sigurd Wenberg started the company in 1924 using horses and later began to use trucks.</p>
     </div>
     <div class="col-md-5">
       <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
@@ -103,8 +120,8 @@
 
   <div class="row featurette">
     <div class="col-md-7 order-md-2">
-      <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
-      <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+      <h2 class="featurette-heading fw-normal lh-1">The Good Old Days</h2>
+      <p class="lead">The wonder years of vintage trucks and beards. </p>
     </div>
     <div class="col-md-5 order-md-1">
       <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
@@ -115,8 +132,8 @@
 
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
-      <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+      <h2 class="featurette-heading fw-normal lh-1">The Modern Era</h2>
+      <p class="lead">The years leading up to today and beyond.</p>
     </div>
     <div class="col-md-5">
       <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
