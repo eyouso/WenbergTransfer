@@ -7,7 +7,6 @@ app.use(express.static("public"));
 
 app.get("/", (req, res) => {
   res.render("index.ejs", { year: new Date().getFullYear() });
-  //res.render("index.ejs");
 });
 
 app.get("/contact", (req, res) => {
