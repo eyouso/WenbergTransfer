@@ -1,38 +1,55 @@
-/* Color Palette */
-.bg-light-blue {
-    background-color: #cce7ff;
-  }
-  
-  .text-dark-blue {
-    color: #003366;
-  }
-  
-  /* Carousel Styling */
-  .carousel-inner img {
-    border-radius: 8px;
-  }
-  
-  .carousel-caption {
-    font-family: 'Georgia', serif;
-    font-size: 1.2rem;
-  }
-  
-  /* Header Styling */
-  header h1 {
-    font-family: 'Georgia', serif;
-  }
-  
-  header p {
+/* General Styles */
+body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
   }
   
-  /* Footer Styling */
-  footer {
-    border-top: 2px solid #003366;
+  /* Header Enhancements */
+  .header {
+    background-image: url('/assets/vintage-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #003366;
+    padding: 3rem 0;
   }
   
-  footer p {
-    margin: 0;
-    font-size: 1rem;
+  .header h1 {
+    font-family: 'Georgia', serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Carousel Enhancements */
+  .carousel-inner img {
+    filter: sepia(20%);
+    transition: filter 0.5s ease-in-out;
+  }
+  
+  .carousel-inner img:hover {
+    filter: sepia(0%);
+  }
+  
+  /* Important People Section */
+  .important-person img {
+    border-radius: 50%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .important-person img:hover {
+    transform: scale(1.05);
+    filter: grayscale(100%);
+  }
+  
+  
+  /* Footer */
+  footer {
+    background-color: #cce7ff;
+    color: #003366;
+  }
+  
+  footer a {
+    color: #003366;
+  }
+  
+  footer a:hover {
+    color: #005cbf;
   }
   
