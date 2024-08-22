@@ -1,11 +1,11 @@
 /* General Styles */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Georgia', Arial, serif;
   }
   
   /* Header Enhancements */
   .header {
-    background-image: url('/assets/vintage-background.jpg');
+    background-image: url('/assets/InsertImageHere.jpg');
     background-size: cover;
     background-position: center;
     color: #003366;
