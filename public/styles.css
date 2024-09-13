@@ -1,16 +1,21 @@
 /* General Styles */
 body {
-    font-family: 'Georgia', Arial, serif;
+    font-family: 'Poppins', Arial, serif;
+    font-weight: 400;
   }
   
   /* Header Enhancements */
   .header {
-    background-image: url('/assets/InsertImageHere.jpg');
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    background-color: #253819; 
     background-size: cover;
     background-position: center;
-    color: #003366;
-    padding: 3rem 0;
   }
+  
   
   .header h1 {
     font-family: 'Georgia', serif;
@@ -26,6 +31,10 @@ body {
   .carousel-inner img:hover {
     filter: sepia(0%);
   }
+
+  .carousel-image {
+    max-height: 500px; object-fit: cover
+  }
   
   
   /* Important People Section */
@@ -39,18 +48,56 @@ body {
     filter: grayscale(100%);
   }
   
+  .name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Adjust the weight if necessary */
+  }
+
+  .personal-info {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Adjust the weight if necessary */
+  }
+
+
+  /* Featurette Section */
+  .featurette-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Adjust the weight if necessary */
+  }
+
+  .lead {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; /* Adjust the weight if necessary */
+  }
+  
   
   /* Footer */
-  footer {
-    background-color: #cce7ff;
-    color: #003366;
-  }
-  
-  footer a {
-    color: #003366;
-  }
-  
-  footer a:hover {
-    color: #005cbf;
-  }
-  
+ /* Footer Styles */
+/* Footer Styles */
+.footer {
+  background-color: #19236b;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Center the content as a whole */
+  align-items: center;
+  position: relative;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-logo {
+  position: absolute;
+  right: 20px; /* Position the logo to the right side */
+}
+
+footer a {
+  color: white;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  color: #005cbf;
+}

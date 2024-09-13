@@ -8,176 +8,54 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <main class="container"></main>
 
     <!-- Header Section -->
-    <div class="px-4 py-5 my-5 text-center header">
-      <img
-        class="d-block mx-auto mb-4"
-        src="/docs/5.3/assets/brand/bootstrap-logo.svg"
-        alt=""
-        width="72"
-        height="57"
-      />
-      <h1 class="display-3 fw-bold text-body-emphasis">Wenberg Transfer</h1>
-      <% if(locals.year) {%>
-      <h2 class="display-6 fw text-body-emphasis">
-        <%= year - 1924 %> Years and Still Trucking
-      </h2>
-      <% } else { %>
-      <h2 class="display-6 fw text-body-emphasis">
-        100+ Years and Still Trucking
-      </h2>
-      <% } %>
-    </div>
+<div class="px-2 py-2 text-center header">
+  <img
+    class="d-block mx-auto mb-4"
+    src="/assets/logos/L1-Anniversary-White.png"
+    alt="Wenberg Transfer Logo"
+    width="25%"
+    height="auto"
+  />
+  <!-- Uncomment the heading content as needed -->
+  <!-- <h1 class="display-3 fw-bold text-body-emphasis">Wenberg Transfer</h1>
+  <% if(locals.year) { %>
+  <h2 class="display-6 fw text-body-emphasis">
+    <%= year - 1924 %> Years and Still Trucking
+  </h2>
+  <% } else { %>
+  <h2 class="display-6 fw text-body-emphasis">
+    100+ Years and Still Trucking
+  </h2>
+  <% } %> -->
+</div>
+
 
     <!-- Carousel Section -->
-    <div
-      id="myCarousel"
-      class="carousel slide mb-6 pointer-event col-lg-6 col-md-8 col-sm-12 mx-auto"
-      data-bs-ride="carousel"
-      style="margin-top: 2rem; max-width: 800px; max-height: 500px"
-    >
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <!-- First image as the active carousel item -->
-        <div class="carousel-item active">
-          <img
-            src="/assets/Big_Horses.jpg"
-            class="d-block w-100"
-            alt="Five Wenberg Trucks"
-            style="max-height: 500px; object-fit: cover"
-          />
-          <div class="carousel-caption text-start">
-            <h1>First Image Caption</h1>
-            <p>Some representative placeholder content for the first slide.</p>
+        <% carouselImages.forEach((image, index) => { %>
+          <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+            <img src="/assets/carousel/<%= image %>" class="d-block w-100 carousel-image" alt="carousel image">
           </div>
-        </div>
-
-        <!-- Second image -->
-        <div class="carousel-item">
-          <img
-            src="/assets/Carrying_Log.jpg"
-            class="d-block w-100"
-            alt="John Senior and a truck hauling logs"
-            style="max-height: 500px; object-fit: cover"
-          />
-          <div class="carousel-caption">
-            <h1>Second Image Caption</h1>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-
-        <!-- Third image -->
-        <div class="carousel-item">
-          <img
-            src="/assets/Horses.jpg"
-            class="d-block w-100"
-            alt="John Wenberg junior and senior together"
-            style="max-height: 500px; object-fit: cover"
-          />
-          <div class="carousel-caption text-end">
-            <h1>Third Image Caption</h1>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-
-        <!-- Fourth image -->
-        <div class="carousel-item">
-          <img
-            src="/assets/Log_Truck.jpg"
-            class="d-block w-100"
-            alt="John Wenberg junior with a truck"
-            style="max-height: 500px; object-fit: cover"
-          />
-          <div class="carousel-caption text-end"></div>
-        </div>
-
-        <!-- Fifth image -->
-        <div class="carousel-item">
-          <img
-            src="/assets/Long_Log_Truck.jpg"
-            class="d-block w-100"
-            alt="An old Wenberg truck"
-            style="max-height: 500px; object-fit: cover"
-          />
-          <div class="carousel-caption text-end"></div>
-        </div>
-
-        <!-- Sixth image -->
-        <div class="carousel-item">
-          <img
-            src="/assets/Old_Sig.jpg"
-            class="d-block w-100"
-            alt="The front of an old Wenberg truck"
-            style="max-height: 500px; object-fit: cover"
-          />
-          <div class="carousel-caption text-end"></div>
-        </div>
-
-        <!-- Seventh image -->
-        <div class="carousel-item">
-          <img
-            src="/assets/Raising_Logs.jpg"
-            class="d-block w-100"
-            alt="The left side of an old Wenberg truck"
-            style="max-height: 500px; object-fit: cover"
-          />
-          <div class="carousel-caption text-end"></div>
-        </div>
-
-        <!-- Eighth image -->
-        <div class="carousel-item">
-          <img
-            src="/assets/Raising_Logs_2.jpg"
-            class="d-block w-100"
-            alt="A Wenberg paper article"
-            style="max-height: 500px; object-fit: cover"
-          />
-          <div class="carousel-caption text-end"></div>
-        </div>
-
-        <!-- Ninth image -->
-        <div class="carousel-item">
-          <img
-            src="/assets/Sigurd.jpg"
-            class="d-block w-100"
-            alt="A Wenberg paper article"
-            style="max-height: 500px; object-fit: cover"
-          />
-          <div class="carousel-caption text-end"></div>
-        </div>
-
-        <!-- Tenth image -->
-        <div class="carousel-item">
-          <img
-            src="/assets/Truck_Swag.jpg"
-            class="d-block w-100"
-            alt="A Wenberg paper article"
-            style="max-height: 500px; object-fit: cover"
-          />
-          <div class="carousel-caption text-end"></div>
-        </div>
+        <% }) %>
       </div>
-
-      <!-- Carousel Controls -->
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#myCarousel"
-        data-bs-slide="prev"
-      >
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#myCarousel"
-        data-bs-slide="next"
-      >
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -188,53 +66,53 @@
       <div class="row text-center">
         <div class="col-lg-3 important-person">
           <img
-            src="/assets/Sigurd.jpg"
+            src="/assets/carousel/Sigurd.jpg"
             class="rounded-circle mb-3"
             alt="Sigurd Wenberg"
             width="140"
             height="140"
           />
-          <h2 class="fw-normal">Sigurd Wenberg</h2>
-          <p>Founder and early visionary who started with horses.</p>
+          <h2 class="name">Sigurd Wenberg</h2>
+          <p class="personal-info">Founder and early visionary who started with horses.</p>
         </div>
         <!-- /.col-lg-3 -->
 
         <div class="col-lg-3 important-person">
           <img
-            src="/assets/Truck_Swag.jpg"
+            src="/assets/carousel/Truck_Swag.jpg"
             class="rounded-circle mb-3"
             alt="John Wenberg Sr."
             width="140"
             height="140"
           />
-          <h2 class="fw-normal">John Wenberg, Sr.</h2>
-          <p>Continued the family business into the modern era.</p>
+          <h2 class="name">John Wenberg, Sr.</h2>
+          <p class="personal-info"></p>>Continued the family business into the modern era.</p>
         </div>
         <!-- /.col-lg-3 -->
 
         <div class="col-lg-3 important-person">
           <img
-            src="/assets/Carrying_Log.jpg"
+            src="/assets/carousel/Carrying_Log.jpg"
             class="rounded-circle mb-3"
             alt="John Wenberg Jr."
             width="140"
             height="140"
           />
-          <h2 class="fw-normal">John Wenberg, Jr.</h2>
-          <p>Expanded the business and kept the family legacy alive.</p>
+          <h2 class="name">John Wenberg, Jr.</h2>
+          <p class="personal-info"></p>>Expanded the business and kept the family legacy alive.</p>
         </div>
         <!-- /.col-lg-3 -->
 
         <div class="col-lg-3 important-person">
           <img
-            src="/assets/Sigurd.jpg"
+            src="/assets/carousel/Sigurd.jpg"
             class="rounded-circle mb-3"
             alt="Clayton Wenberg"
             width="140"
             height="140"
           />
-          <h2 class="fw-normal">Clayton Wenberg</h2>
-          <p>Current leader, ensuring the business thrives today.</p>
+          <h2 class="name">Clayton Wenberg</h2>
+          <p class="personal-info"></p>>Current leader, ensuring the business thrives today.</p>
         </div>
         <!-- /.col-lg-3 -->
       </div>
@@ -245,7 +123,7 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">Humble Beginnings</h2>
+          <h2 class="featurette-heading lh-1">Humble Beginnings</h2>
           <p class="lead">
             This is how Sigurd Wenberg started the company in 1924 using horses
             and later began to use trucks.
@@ -253,7 +131,7 @@
         </div>
         <div class="col-md-5">
           <img
-            src="/assets/Big_Horses.jpg"
+            src="/assets/carousel/Big_Horses.jpg"
             class="featurette-image img-fluid mx-auto"
             alt="Humble Beginnings"
             style="max-height: 500px"
@@ -265,12 +143,12 @@
 
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading fw-normal lh-1">Mid-Century Growth</h2>
+          <h2 class="featurette-heading lh-1">Mid-Century Growth</h2>
           <p class="lead">The wonder years of vintage trucks and beards.</p>
         </div>
         <div class="col-md-5 order-md-1">
           <img
-            src="/assets/Truck_Swag.jpg"
+            src="/assets/carousel/Truck_Swag.jpg"
             class="featurette-image img-fluid mx-auto"
             alt="Mid-Century Growth"
             style="max-height: 500px"
@@ -282,12 +160,12 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">The Good Old Days</h2>
+          <h2 class="featurette-heading lh-1">The Good Old Days</h2>
           <p class="lead">The years leading up to today and beyond.</p>
         </div>
         <div class="col-md-5">
           <img
-            src="/assets/Log_Truck.jpg"
+            src="/assets/carousel/Log_Truck.jpg"
             class="featurette-image img-fluid mx-auto"
             alt="The Good Old Days"
             style="max-height: 500px"
@@ -299,12 +177,12 @@
 
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading fw-normal lh-1">The Modern Era</h2>
+          <h2 class="featurette-heading lh-1">The Modern Era</h2>
           <p class="lead">The wonder years of vintage trucks and beards.</p>
         </div>
         <div class="col-md-5 order-md-1">
           <img
-            src="/assets/Log_Truck.jpg"
+            src="/assets/carousel/Log_Truck.jpg"
             class="featurette-image img-fluid mx-auto"
             alt="The Modern Era"
             style="max-height: 500px"
