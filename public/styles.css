@@ -33,7 +33,7 @@ body {
   }
 
   .carousel-image {
-    max-height: 500px; object-fit: cover
+    max-height: 60vh; object-fit: cover;
   }
   
   
@@ -75,7 +75,7 @@ body {
  /* Footer Styles */
 /* Footer Styles */
 .footer {
-  background-color: #19236b;
+  background-color: #253819;
   color: white;
   padding: 20px;
   display: flex;
