@@ -130,12 +130,24 @@
           </p>
         </div>
         <div class="col-md-5">
-          <img
-            src="/assets/carousel/Big_Horses.jpg"
-            class="featurette-image img-fluid mx-auto"
-            alt="Humble Beginnings"
-            style="max-height: 500px"
-          />
+          <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner featurette-carousel">
+              <% carousel1Images.forEach((image, index) => { %>
+                <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+                  <img src="/assets/feature/featureCarousel1/<%= image %>" class="d-block w-100" alt="Feature image">
+                </div>
+              <% }) %>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
         </div>
       </div>
 
@@ -147,12 +159,23 @@
           <p class="lead">In 1938, Sigurd’s son, John "John John" Wenberg, joined the company, spending his winters hauling pulpwood and summers moving household goods. When John John left to serve in World War II, Sigurd continued operations with the help of other workers. After John John returned in 1945, the company focused on hauling pulpwood, household goods, and freight, eventually phasing out pulpwood hauling in the 1950s. Wenberg Transfer continued to handle moving and freight services through 1978.
         </div>
         <div class="col-md-5 order-md-1">
-          <img
-            src="/assets/carousel/Truck_Swag.jpg"
-            class="featurette-image img-fluid mx-auto"
-            alt="Mid-Century Growth"
-            style="max-height: 500px"
-          />
+          <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner featurette-carousel">
+              <% carousel2Images.forEach((image, index) => { %>
+                <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+                  <img src="/assets/feature/featureCarousel2/<%= image %>" class="d-block w-100" alt="Feature image">
+                </div>
+              <% }) %>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -164,12 +187,23 @@
           <p class="lead">In the 1970s, the company further diversified, hauling paper starting in 1974 and insulating materials from 1972 to 1980. John S. Wenberg, the grandson of the founder, joined the business in 1967, marking the beginning of the third generation’s leadership. A devastating fire in 1984 destroyed the Wenberg Transfer building, but thanks to the generosity of Shannon’s, the company was able to continue operations by using their facility.</p>
         </div>
         <div class="col-md-5">
-          <img
-            src="/assets/carousel/Log_Truck.jpg"
-            class="featurette-image img-fluid mx-auto"
-            alt="The Good Old Days"
-            style="max-height: 500px"
-          />
+          <div id="carousel3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner featurette-carousel">
+              <% carousel3Images.forEach((image, index) => { %>
+                <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+                  <img src="/assets/feature/featureCarousel3/<%= image %>" class="d-block w-100" alt="Feature image">
+                </div>
+              <% }) %>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -177,16 +211,27 @@
 
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading lh-1">The Modern Era</h2>
+          <h2 class="featurette-heading lh-1">Present-Day Persistence</h2>
           <p class="lead">In 1991, the fourth generation, Clayton Wenberg, joined the company, continuing the family legacy. Over the years, Wenberg Transfer has hauled over 40,000 loads of paper and traveled more than 24 million miles, serving major clients like Boise Cascade and PCA. Though the company ceased international shipping in 2012, it remains a trusted name in hauling paper products across Minnesota.</p>
         </div>
         <div class="col-md-5 order-md-1">
-          <img
-            src="/assets/carousel/Log_Truck.jpg"
-            class="featurette-image img-fluid mx-auto"
-            alt="The Modern Era"
-            style="max-height: 500px"
-          />
+          <div id="carousel4" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner featurette-carousel">
+              <% carousel4Images.forEach((image, index) => { %>
+                <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+                  <img src="/assets/feature/featureCarousel4/<%= image %>" class="d-block w-100" alt="Feature image">
+                </div>
+              <% }) %>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </div>
 

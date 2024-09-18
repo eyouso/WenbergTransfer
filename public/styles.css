@@ -22,18 +22,15 @@ body {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   }
   
-  /* Carousel Enhancements */
-  .carousel-inner img {
-    filter: sepia(20%);
-    transition: filter 0.5s ease-in-out;
-  }
-  
-  .carousel-inner img:hover {
-    filter: sepia(0%);
-  }
-
+  /* Carousels */
   .carousel-image {
     max-height: 60vh; object-fit: cover;
+  }
+
+  .featurette-carousel img {
+    width: 100%; /* Adjust based on your layout */
+    height: auto; /* Adjust based on your layout */
+    object-fit: cover; 
   }
   
   
