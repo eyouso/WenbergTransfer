@@ -28,8 +28,8 @@ body {
   }
 
   .featurette-carousel img {
-    width: 100%; /* Adjust based on your layout */
-    height: auto; /* Adjust based on your layout */
+    width: 100%; 
+    height: auto; 
     object-fit: cover; 
   }
   
@@ -66,11 +66,21 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400; /* Adjust the weight if necessary */
   }
+
+  .featurette {
+    display: flex;
+    align-items: center; /* Vertically center the text and carousel */
+    justify-content: space-between; /* Space out the text and carousel */
+    gap: 50px;
+    flex-wrap: nowrap;
+    width: 100%; /* Ensure the featurette takes up full width */
+}
+
+  .outer-featurette-carousel {
+    align-self: center; /* Aligns carousel halfway down next to the text */
+  }
   
-  
-  /* Footer */
- /* Footer Styles */
-/* Footer Styles */
+/* Footer */
 .footer {
   background-color: #253819;
   color: white;
