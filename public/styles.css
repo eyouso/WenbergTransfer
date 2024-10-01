@@ -10,8 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center the content vertically */
-    align-items: center; /* Center the content horizontally */
-    background-color: #253819; 
+    align-items: center; /* Center the content horizontally */; 
     background-size: cover;
     background-position: center;
   }
@@ -41,8 +40,8 @@ body {
   }
   
   .important-person img:hover {
-    transform: scale(1.05);
-    filter: grayscale(100%);
+    transform: scale(2.5);
+    /* filter: grayscale(100%); */
   }
   
   .name {
