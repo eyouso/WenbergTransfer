@@ -13,6 +13,7 @@ body {
     align-items: center; /* Center the content horizontally */; 
     background-size: cover;
     background-position: center;
+    margin-bottom: 100px;
   }
   
   
