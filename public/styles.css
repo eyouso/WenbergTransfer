@@ -17,6 +17,21 @@ body {
   width: 100%;
   height: auto;
 }
+
+/* Nav Bar */
+
+.navbar {
+  background-color: #253819; /* Dark green background */
+  color: white; /* White text color */
+  padding: 10px 0; /* Add padding to the top and bottom */
+}
+
+.navbar a {
+  color: white; /* White text color */
+  margin: 0 200px; /* Add margin to space out the links */
+  font-weight: 600;
+  font-size: larger;
+}
   
   /* Carousels */
   .carousel-image {
@@ -34,6 +49,12 @@ body {
   
   
   /* Important People Section */
+
+  .important-people-container {
+    max-width: 1600px; /* Increase this value to make the container wider */
+    width: 100%; /* Ensure the container takes up full width */
+  }
+
   .important-person img {
     border-radius: 50%;
     transition: transform 0.3s ease, filter 0.3s ease;
