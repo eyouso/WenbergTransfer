@@ -164,7 +164,7 @@
       </div>
       <div class="mx-5 mt-5">
         <div class="row featurette">
-          <div class="col-md-7">
+          <div class="col-md-7 mb-0">
             <h2 class="featurette-heading lh-1">Humble Beginnings</h2>
             <p class="lead">
               Wenberg Transfer was founded in 1924 by Sigurd Wenberg in
@@ -196,6 +196,18 @@
               Sarah passed away in 1959 at the age of 68, and Sig died in 1962
               at 72.
             </p>
+            <div id="quote-box-1" class="quote-box my-5">
+              <p class="quote">
+                “My dad, who lived to age 102, knew Sigurd. He told me the
+                stories of Sig delivering ice to a site across from Northern
+                Lumber. He delivered the ice with his team of horses pulling a
+                flat bed wagon. Sig enjoyed talking to people in the community
+                and was known as a gem of a guy.”
+              </p>
+              <p class="quote" style="font-style: normal; text-align: right">
+                Randy Shoberg- Current Wenberg Employee
+              </p>
+            </div>
           </div>
           <div class="col-md-5">
             <div
@@ -242,7 +254,7 @@
           </div>
         </div>
 
-        <hr class="featurette-divider" />
+        <hr class="featurette-divider mt-0" />
 
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
@@ -725,14 +737,19 @@
     <!-- Facts Section -->
     <div class="carousel-container my-5">
       <div class="fact-display" id="fact-display"></div>
-  
+
       <!-- Navigation arrows -->
-      <button class="carousel-control prev" onclick="prevFact()">&#10094;</button>
-      <button class="carousel-control next" onclick="nextFact()">&#10095;</button>
+      <button class="carousel-control prev" onclick="prevFact()">
+        &#10094;
+      </button>
+      <button class="carousel-control next" onclick="nextFact()">
+        &#10095;
+      </button>
     </div>
-  
+
     <!-- Link to the external JavaScript file -->
-    <script src="/scripts/facts.js"></script> <!-- Correct path for facts.js -->
+    <script src="/scripts/facts.js"></script>
+    <!-- Correct path for facts.js -->
 
     <!-- Footer -->
     <%- include("partials/footer.ejs") %>

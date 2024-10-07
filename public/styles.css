@@ -80,6 +80,25 @@ body {
     font-weight: 400; /* Adjust the weight if necessary */
   }
 
+  .quote {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Adjust the weight if necessary */
+    font-style: italic; 
+    color: white; /* Dark green text color */
+    width: 100%;
+    text-align: justify;
+    margin: 0 auto;
+  }
+
+  .quote-box {
+    background-color: #253819;
+    width: 75%;
+    margin: 0 auto; /* Center the box horizontally */
+    border-radius: 10px; /* Slightly rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+
   .section-divider {
     background-color: #253819; /* Dark green background */
     width: 100%; /* Ensure the divider takes up full width */
