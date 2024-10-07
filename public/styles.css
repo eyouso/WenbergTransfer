@@ -172,6 +172,51 @@ body {
   border-radius: 10px; /* Slightly rounded corners */
   object-fit: cover; /* Ensures the image fits the container while maintaining aspect ratio */
 }
+
+/* Facts Section */
+
+/* Carousel container styling */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Fact display styling */
+.fact-display {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the carousel control arrows */
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.carousel-control.prev {
+  left: -40px; /* Move the left arrow farther from the text (adjust value as needed) */
+}
+
+.carousel-control.next {
+  right: -40px; /* Move the right arrow farther from the text (adjust value as needed) */
+}
+
   
 /* Footer */
 .footer {
