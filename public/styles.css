@@ -50,6 +50,17 @@ body {
   
   /* Important People Section */
 
+  .Wenberg-name-container {
+    max-width: 1600px;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .Wenberg-name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Adjust the weight if necessary */
+  }
+
   .important-people-container {
     max-width: 1600px; /* Increase this value to make the container wider */
     width: 100%; /* Ensure the container takes up full width */
@@ -75,8 +86,30 @@ body {
     font-weight: 400; /* Adjust the weight if necessary */
   }
 
+  .section-divider {
+    background-color: #253819; /* Dark green background */
+    width: 100%; /* Ensure the divider takes up full width */
+    padding-top: 20px; /* Add padding to the top */
+    padding-bottom: 20px; /* Add padding to the bottom */
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
 
-  /* Featurette Section */
+  .section-divider h2 {
+    color: white; /* White text color */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /* Adjust the weight if necessary */
+    font-size: 6rem; /* Make the text very large */
+    margin-left: 150px; /* Adjust the margin if necessary */
+  }
+
+
+  /* Featurette/Our History Section */
+
+  #our-history {
+    background-color: #FEFFEB;
+  }
+
   .featurette-heading {
     font-family: 'Poppins', sans-serif;
     font-weight: 700; /* Adjust the weight if necessary */
@@ -105,7 +138,8 @@ body {
   #current-employees-title {
     font-family: 'Poppins', sans-serif;
     font-weight: 700; /* Adjust the weight if necessary */
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    font-size: 4rem; /* Make the text very large */
   }
 
   .employee-name {

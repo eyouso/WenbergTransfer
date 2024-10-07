@@ -37,6 +37,9 @@
     </nav>
 
     <!-- Important People Section -->
+    <div class="container marketing Wenberg-name-container mt-5">
+      <h1 class="text-center Wenberg-name">The Wenberg Family</h1>
+    </div>
     <div class="container marketing important-people-container mt-5">
       <div class="row text-center">
         <div class="col-lg-3 important-person">
@@ -143,9 +146,11 @@
     </div>
 
     <!-- Our History Section Section -->
-    <div class="container marketing mt-5">
-      <section id="our-history">
-        <hr class="featurette-divider" />
+    <section id="our-history">
+      <div class="section-divider">
+        <h2>A Century of Service</h2>
+      </div>
+      <div class="mx-5 mt-5">
         <div class="row featurette">
           <div class="col-md-7">
             <h2 class="featurette-heading lh-1">Humble Beginnings</h2>
@@ -522,13 +527,13 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <hr class="featurette-divider" />
-      </section>
-    </div>
+    <hr class="featurette-divider mt-0" />
 
     <!-- Current Employees Section -->
-    <div class="container mt-5">
+    <div class="mx-5 mt-5">
       <h2 id="current-employees-title" class="text-center">
         Current Employees
       </h2>
@@ -665,40 +670,43 @@
       <hr class="featurette-divider" />
 
       <!-- Carousel Section -->
-      <div
-        id="carouselExample"
-        class="carousel slide my-5"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <% carouselImages.forEach((image, index) => { %>
-          <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
-            <img
-              src="/assets/carousel/<%= image %>"
-              class="d-block w-100 carousel-image"
-              alt="carousel image"
-            />
+
+      <div class="container mt-5">
+        <div
+          id="carouselExample"
+          class="carousel slide my-5"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <% carouselImages.forEach((image, index) => { %>
+            <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+              <img
+                src="/assets/carousel/<%= image %>"
+                class="d-block w-100 carousel-image"
+                alt="carousel image"
+              />
+            </div>
+            <% }) %>
           </div>
-          <% }) %>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </div>
 
