@@ -1,187 +1,257 @@
 /* General Styles */
 body {
-    font-family: 'Poppins', Arial, serif;
-    font-weight: 400;
-  }
-  
-  /* Header Enhancements */
-  /* Ensure the header container is responsive */
+  font-family: "Poppins", Arial, serif;
+  font-weight: 400;
+}
+
+/* Header Section */
+
+#header-section {
+  margin: 0;
+}
+
+/*elipse*/
+.elipse {
+  border-radius: 50%;
+}
+
+#logo-elipse {
+  background-color: #21375b;
+  width: 324px;
+  height: 324px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  width: 329px;
+  height: auto;
+  flex-shrink: 0;
+  z-index: 2; /* Ensure the logo is on top of the elipse */
+}
+
+/* Nav Bar */
+
+.navbar {
+  height: 209px; /* Set the height of the navbar */
+  background-color: #21375b; /* Blue background */
+  color: white; /* White text color */
+  flex-shrink: 0;
+  z-index: 0;
+}
+
+.navbar a {
+  color: white; /* White text color */
+  margin-left: 45px; /* Adjust the spacing */
+  margin-right: 45px; /* Adjust the spacing */
+  margin-top: 129px; /* Adjust the spacing */
+  font-weight: 700;
+  font-size: 32px;
+  font-style: normal;
+  line-height: normal;
+}
+
+/* Banner Box */
 .header {
   width: 100%; /* Make the header take up full width */
   text-align: center; /* Center the content */
   box-sizing: border-box; /* Include padding in width calculation */
 }
 
-/* Make the logo responsive */
-.header-logo {
+/* Banner Image */
+.header img {
+  width: 100%; /* Make the image take up full width */
+  max-height: 560px;
+  object-fit: cover;
+  height: auto;
+  box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.header-bottom-bar-container {
+  width: 100%;
+  height: 177px;
+  background-color: #21375b;
+  border: 2px solid #82b0fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-bottom-bar-container h2 {
+  color: #82b0fc;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: #fff;
+  font-family: Poppins;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-wrap: nowrap;
+}
+
+/* Carousels */
+.carousel-image {
+  /*max-height: 60vh; */
+  object-fit: cover;
+  border-radius: 10px; /* Slightly rounded corners */
+}
+
+.featurette-carousel img {
   width: 100%;
   height: auto;
+  object-fit: cover;
+  border-radius: 10px; /* Slightly rounded corners */
 }
 
-/* Nav Bar */
+/* Important People Section */
 
-.navbar {
+#important-people-section {
+  background-color: #dde5e8;
+}
+
+.important-people-container {
+  max-width: 1600px; /* Increase this value to make the container wider */
+  width: 100%; /* Ensure the container takes up full width */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 50px 20px; /* Add padding to the top and bottom */
+}
+
+.important-person ellipse {
+  width: 215px;
+  height: 215px;
+  flex-shrink: 0;
+}
+
+.important-person img {
+  border: 4px solid #21375B; /* 4px solid border, adjust color as needed */
+  transition: ease-in-out 0.3s; /* Smooth transition effect */
+}
+
+
+.important-person img:hover {
+  transform: scale(1.1);
+}
+
+.name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* Adjust the weight if necessary */
+}
+
+.personal-info {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; /* Adjust the weight if necessary */
+}
+
+.quote {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* Adjust the weight if necessary */
+  font-style: italic;
+  color: white; /* Dark green text color */
+  width: 100%;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.quote-box {
+  background-color: #253819;
+  width: 75%;
+  margin: 0 auto; /* Center the box horizontally */
+  border-radius: 10px; /* Slightly rounded corners */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.section-divider {
   background-color: #253819; /* Dark green background */
+  width: 100%; /* Ensure the divider takes up full width */
+  padding-top: 20px; /* Add padding to the top */
+  padding-bottom: 20px; /* Add padding to the bottom */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  position: relative; /* Allow absolutely positioned elements inside */
+  overflow: hidden; /* Ensure anything overflowing will be hidden */
+}
+
+.section-divider .d-flex {
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center; /* Vertically center the text */
+  flex-wrap: nowrap; /* Prevent the image from wrapping */
+  position: relative; /* Make sure the truck image is positioned relative to this */
+}
+
+.section-divider h2 {
   color: white; /* White text color */
-  padding: 10px 0; /* Add padding to the top and bottom */
+  font-family: "Poppins", sans-serif;
+  font-weight: 600; /* Adjust the weight if necessary */
+  font-size: 6rem; /* Make the text very large */
+  margin-left: 150px; /* Adjust the margin if necessary */
+  white-space: nowrap; /* Prevents the text from wrapping to a new line */
 }
 
-.navbar a {
-  color: white; /* White text color */
-  margin: 0 200px; /* Add margin to space out the links */
-  font-weight: 600;
-  font-size: larger;
-}
-  
-  /* Carousels */
-  .carousel-image {
-    /*max-height: 60vh; */
-    object-fit: cover;
-    border-radius: 10px; /* Slightly rounded corners */
-  }
-
-  .featurette-carousel img {
-    width: 100%; 
-    height: auto; 
-    object-fit: cover; 
-    border-radius: 10px; /* Slightly rounded corners */
-  }
-  
-  
-  /* Important People Section */
-
-  .Wenberg-name-container {
-    max-width: 1600px;
-    width: 100%;
-  }
-
-  .important-people-container {
-    max-width: 1600px; /* Increase this value to make the container wider */
-    width: 100%; /* Ensure the container takes up full width */
-  }
-
-  .important-person img {
-    border-radius: 50%;
-    transition: transform 0.3s ease, filter 0.3s ease;
-  }
-  
-  .important-person img:hover {
-    transform: scale(1.2);
-    /* filter: grayscale(100%); */
-  }
-  
-  .name {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700; /* Adjust the weight if necessary */
-  }
-
-  .personal-info {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400; /* Adjust the weight if necessary */
-  }
-
-  .quote {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700; /* Adjust the weight if necessary */
-    font-style: italic; 
-    color: white; /* Dark green text color */
-    width: 100%;
-    text-align: justify;
-    margin: 0 auto;
-  }
-
-  .quote-box {
-    background-color: #253819;
-    width: 75%;
-    margin: 0 auto; /* Center the box horizontally */
-    border-radius: 10px; /* Slightly rounded corners */
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  }
-
-  .section-divider {
-    background-color: #253819; /* Dark green background */
-    width: 100%; /* Ensure the divider takes up full width */
-    padding-top: 20px; /* Add padding to the top */
-    padding-bottom: 20px; /* Add padding to the bottom */
-    margin-top: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    position: relative; /* Allow absolutely positioned elements inside */
-    overflow: hidden; /* Ensure anything overflowing will be hidden */
-  }
-  
-  .section-divider .d-flex {
-    justify-content: flex-start; /* Align items to the left */
-    align-items: center; /* Vertically center the text */
-    flex-wrap: nowrap; /* Prevent the image from wrapping */
-    position: relative; /* Make sure the truck image is positioned relative to this */
-  }
-  
-  .section-divider h2 {
-    color: white; /* White text color */
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600; /* Adjust the weight if necessary */
-    font-size: 6rem; /* Make the text very large */
-    margin-left: 150px; /* Adjust the margin if necessary */
-    white-space: nowrap; /* Prevents the text from wrapping to a new line */
-  }
-  
-  .truck-image {
-    height: 240px; /* Make the truck larger */
-    width: auto; /* Maintain aspect ratio */
-    position: absolute; /* Position it absolutely to remove it from the document flow */
-    left: 1300px; /* Place it to the right of the text by 20px (adjustable) */
-    top: 50%; /* Position it in the middle of the container vertically */
-    transform: translateY(-55%); /* Center it vertically within the container */
-  }
-
-  /* Featurette/Our History Section */
-
-  #our-history {
-    background-color: #FEFFEB;
-  }
-
-  .featurette-heading {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700; /* Adjust the weight if necessary */
-  }
-
-  .lead {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400; /* Adjust the weight if necessary */
-  }
-
-  .featurette {
-    display: flex;
-    align-items: center; /* Vertically center the text and carousel */
-    justify-content: space-between; /* Space out the text and carousel */
-    gap: 50px;
-    flex-wrap: nowrap;
-    width: 100%; /* Ensure the featurette takes up full width */
+.truck-image {
+  height: 240px; /* Make the truck larger */
+  width: auto; /* Maintain aspect ratio */
+  position: absolute; /* Position it absolutely to remove it from the document flow */
+  left: 1300px; /* Place it to the right of the text by 20px (adjustable) */
+  top: 50%; /* Position it in the middle of the container vertically */
+  transform: translateY(-55%); /* Center it vertically within the container */
 }
 
-  .outer-featurette-carousel {
-    align-self: center; /* Aligns carousel halfway down next to the text */
-  }
+/* Featurette/Our History Section */
 
-  /* Current Employees Section */
-
-  #current-employees-title {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700; /* Adjust the weight if necessary */
-    margin-bottom: 50px;
-    font-size: 4rem; /* Make the text very large */
-  }
-
-  .employee-name {
-    font-weight: 700; /* Make the name bold */
-    margin: 0; /* Remove default margin */
+#our-history {
+  background-color: #feffeb;
 }
 
-  .employee-title {
-    font-weight: 400; /* Normal weight for job title */
-    margin-top: 0; /* Adjust the spacing */
-    color: #6c757d; /* Optional: Give a muted color for the job title */
+.featurette-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* Adjust the weight if necessary */
+}
+
+.lead {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400; /* Adjust the weight if necessary */
+}
+
+.featurette {
+  display: flex;
+  align-items: center; /* Vertically center the text and carousel */
+  justify-content: space-between; /* Space out the text and carousel */
+  gap: 50px;
+  flex-wrap: nowrap;
+  width: 100%; /* Ensure the featurette takes up full width */
+}
+
+.outer-featurette-carousel {
+  align-self: center; /* Aligns carousel halfway down next to the text */
+}
+
+/* Current Employees Section */
+
+#current-employees-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* Adjust the weight if necessary */
+  margin-bottom: 50px;
+  font-size: 4rem; /* Make the text very large */
+}
+
+.employee-name {
+  font-weight: 700; /* Make the name bold */
+  margin: 0; /* Remove default margin */
+}
+
+.employee-title {
+  font-weight: 400; /* Normal weight for job title */
+  margin-top: 0; /* Adjust the spacing */
+  color: #6c757d; /* Optional: Give a muted color for the job title */
 }
 
 .employee-img {
@@ -206,7 +276,7 @@ body {
 
 /* Fact display styling */
 .fact-display {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   color: #333;
@@ -236,7 +306,6 @@ body {
   right: -40px; /* Move the right arrow farther from the text (adjust value as needed) */
 }
 
-  
 /* Footer */
 .footer {
   background-color: #253819;
