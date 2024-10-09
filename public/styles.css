@@ -278,11 +278,29 @@ body {
 
 /* Current Employees Section */
 
+#current-employees-section {
+  background-color: #dde5e8;
+}
+
+#current-employees-box {
+  display: flex;
+  width: 100%;
+  height: 177px;
+  flex-shrink: 0;
+  border: 2px solid #82b0fc;
+  background-color: #21375b;
+  align-items: center;
+  justify-content: center;
+}
+
 #current-employees-title {
   font-family: "Poppins", sans-serif;
-  font-weight: 700; /* Adjust the weight if necessary */
-  margin-bottom: 50px;
-  font-size: 4rem; /* Make the text very large */
+  color: #fff;
+  text-align: center;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .employee-name {
