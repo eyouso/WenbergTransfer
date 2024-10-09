@@ -132,10 +132,9 @@ body {
 }
 
 .important-person img {
-  border: 4px solid #21375B; /* 4px solid border, adjust color as needed */
+  border: 4px solid #21375b; /* 4px solid border, adjust color as needed */
   transition: ease-in-out 0.3s; /* Smooth transition effect */
 }
-
 
 .important-person img:hover {
   transform: scale(1.1);
@@ -171,44 +170,40 @@ body {
 }
 
 .section-divider {
-  background-color: #253819; /* Dark green background */
+  display: flex; /* Use flexbox for alignment */
+  background-color: #21375b; /* Dark blue background */
   width: 100%; /* Ensure the divider takes up full width */
-  padding-top: 20px; /* Add padding to the top */
-  padding-bottom: 20px; /* Add padding to the bottom */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  position: relative; /* Allow absolutely positioned elements inside */
-  overflow: hidden; /* Ensure anything overflowing will be hidden */
-}
-
-.section-divider .d-flex {
-  justify-content: flex-start; /* Align items to the left */
-  align-items: center; /* Vertically center the text */
-  flex-wrap: nowrap; /* Prevent the image from wrapping */
+  height: 177px; /* Set the height of the divider */
+  box-shadow: 0px 4px 15px 0px #21375b; /* Add a subtle shadow */
+  align-items: center;
+  flex-shrink: 0;
   position: relative; /* Make sure the truck image is positioned relative to this */
 }
 
 .section-divider h2 {
   color: white; /* White text color */
   font-family: "Poppins", sans-serif;
-  font-weight: 600; /* Adjust the weight if necessary */
-  font-size: 6rem; /* Make the text very large */
-  margin-left: 150px; /* Adjust the margin if necessary */
+  font-weight: 700; /* Adjust the weight if necessary */
+  font-size: 96px; /* Make the text very large */
+  font-weight: 700; /* Adjust the weight if necessary */
+  line-height: normal;
+  margin-left: 53px; /* Adjust the margin if necessary */
   white-space: nowrap; /* Prevents the text from wrapping to a new line */
 }
 
-.truck-image {
-  height: 240px; /* Make the truck larger */
-  width: auto; /* Maintain aspect ratio */
-  position: absolute; /* Position it absolutely to remove it from the document flow */
-  left: 1300px; /* Place it to the right of the text by 20px (adjustable) */
-  top: 50%; /* Position it in the middle of the container vertically */
-  transform: translateY(-55%); /* Center it vertically within the container */
+.section-divider img {
+  width: 788px;
+  height: 213px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* Featurette/Our History Section */
 
 #our-history {
-  background-color: #feffeb;
+  background-color: #DDE5E8;
 }
 
 .featurette-heading {
