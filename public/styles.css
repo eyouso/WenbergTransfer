@@ -143,7 +143,7 @@ body {
 .name {
   color: #21375b;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -223,13 +223,12 @@ body {
 }
 
 .quote {
+  color: #fff;
   font-family: "Poppins", sans-serif;
-  font-weight: 700; /* Adjust the weight if necessary */
-  font-style: italic;
-  color: white; /* Dark green text color */
-  width: 100%;
-  text-align: justify;
-  margin: 0 auto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .quote-box {
@@ -252,6 +251,13 @@ body {
 #quote-image-1 {
   width: 439px;
   margin-right: 24px;
+  flex-shrink: 0;
+}
+
+#quote-image-2 {
+  width: 359px;
+  margin-left: 75px;
+  flex-shrink: 0;
 }
 
 /* Current Employees Section */
