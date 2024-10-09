@@ -141,32 +141,18 @@ body {
 }
 
 .name {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700; /* Adjust the weight if necessary */
+  color: #21375b;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .personal-info {
   font-family: "Poppins", sans-serif;
   font-weight: 400; /* Adjust the weight if necessary */
-}
-
-.quote {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700; /* Adjust the weight if necessary */
-  font-style: italic;
-  color: white; /* Dark green text color */
-  width: 100%;
-  text-align: justify;
-  margin: 0 auto;
-}
-
-.quote-box {
-  background-color: #253819;
-  width: 75%;
-  margin: 0 auto; /* Center the box horizontally */
-  border-radius: 10px; /* Slightly rounded corners */
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 .section-divider {
@@ -203,17 +189,24 @@ body {
 /* Featurette/Our History Section */
 
 #our-history {
-  background-color: #DDE5E8;
+  background-color: #dde5e8;
 }
 
 .featurette-heading {
+  color: #21375b;
   font-family: "Poppins", sans-serif;
-  font-weight: 700; /* Adjust the weight if necessary */
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .lead {
   font-family: "Poppins", sans-serif;
-  font-weight: 400; /* Adjust the weight if necessary */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .featurette {
@@ -227,6 +220,38 @@ body {
 
 .outer-featurette-carousel {
   align-self: center; /* Aligns carousel halfway down next to the text */
+}
+
+.quote {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700; /* Adjust the weight if necessary */
+  font-style: italic;
+  color: white; /* Dark green text color */
+  width: 100%;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.quote-box {
+  border-radius: 22px;
+  border: 3px solid #21375b;
+  background: #82b0fc;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 75%;
+  margin: 0 auto; /* Center the box horizontally */
+  border-radius: 10px; /* Slightly rounded corners */
+  padding: 20px 30px;
+}
+
+.quote-and-image-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#quote-image-1 {
+  width: 439px;
+  margin-right: 24px;
 }
 
 /* Current Employees Section */
