@@ -250,6 +250,7 @@ body {
 
 #quote-image-1 {
   width: 439px;
+  margin-left: 17px;
   margin-right: 24px;
   flex-shrink: 0;
 }
@@ -257,6 +258,21 @@ body {
 #quote-image-2 {
   width: 359px;
   margin-left: 75px;
+  margin-right: 61px;
+  flex-shrink: 0;
+}
+
+#quote-image-3 {
+  width: 343px;
+  margin-left: 50px;
+  margin-right: 86px;
+  flex-shrink: 0;
+}
+
+#quote-image-4 {
+  width: 442px;
+  margin-left: 47px;
+  margin-right: 44px;
   flex-shrink: 0;
 }
 
