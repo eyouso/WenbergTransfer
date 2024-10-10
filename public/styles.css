@@ -151,8 +151,12 @@ body {
 }
 
 .personal-info {
+  color: #21375b;
   font-family: "Poppins", sans-serif;
-  font-weight: 400; /* Adjust the weight if necessary */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .section-divider {
@@ -304,22 +308,33 @@ body {
 }
 
 .employee-name {
-  font-weight: 700; /* Make the name bold */
+  color: #21375b;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   margin: 0; /* Remove default margin */
 }
 
 .employee-title {
-  font-weight: 400; /* Normal weight for job title */
-  margin-top: 0; /* Adjust the spacing */
-  color: #6c757d; /* Optional: Give a muted color for the job title */
+  color: #21375b;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .employee-img {
   width: 100%; /* Ensure the image takes up the full column width */
   height: auto; /* Maintain the aspect ratio */
-  aspect-ratio: 4 / 3; /* Enforce the 4:3 ratio */
-  border-radius: 10px; /* Slightly rounded corners */
   object-fit: cover; /* Ensures the image fits the container while maintaining aspect ratio */
+  border-radius: 20px;
+  border: 4px solid #21375b;
+  box-shadow: 3px 4px 0px 2px #82b0fc;
 }
 
 /* Facts Section */
@@ -368,7 +383,9 @@ body {
 
 /* Footer */
 .footer {
-  background-color: #253819;
+  background-color: #21375b;
+  border: 2px solid #82b0fc;
+  height: 350px;
   color: white;
   padding: 20px;
   display: flex;
@@ -379,6 +396,25 @@ body {
 
 .footer-content {
   text-align: center;
+}
+
+#wenberg-transfer-inc {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.contact-info {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .footer-logo {
