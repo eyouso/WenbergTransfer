@@ -482,6 +482,19 @@ footer a:hover {
 
 /* Responsive Design */
 
+/* Super Special BreakPoint */
+@media (max-width: 1780px) {
+
+  .section-divider h2 {
+    font-size: 72px;
+  }
+
+  .section-divider img {
+    width: 600px;
+    height: auto;
+  }
+}
+
 /* 0th Breakpoint */
 @media (max-width: 1380px) {
   .header-bottom-bar-container h2 {
@@ -502,6 +515,15 @@ footer a:hover {
 
   .arrow {
     width: 63px;
+  }
+
+  .section-divider h2 {
+    font-size: 60px;
+  }
+  
+  .section-divider img {
+    width: 500px;
+    height: auto;
   }
 }
 
@@ -552,8 +574,16 @@ footer a:hover {
     width: 52px;
   }
 
+  .section-divider {
+    height: 150px;
+  }
+
   .section-divider h2 {
-    font-size: 60px;
+    font-size: 48px;
+  }
+
+  .section-divider img {
+    width: 400px;
   }
 
   .employee-name {
@@ -629,8 +659,16 @@ footer a:hover {
     width: 40px;
   }
 
+  .section-divider {
+    height: 120px;
+  }
+
   .section-divider h2 {
-    font-size: 60px;
+    font-size: 42px;
+  }
+
+  .section-divider img {
+    width: 300px;
   }
 
   .employee-name {
@@ -698,8 +736,16 @@ footer a:hover {
     width: 32px;
   }
 
+  .section-divider {
+    height: 100px;
+  }
+
   .section-divider h2 {
-    font-size: 36px;
+    font-size: 32px;
+  }
+
+  .section-divider img {
+    width: 225px;
   }
 
   .employee-name {
@@ -780,8 +826,16 @@ footer a:hover {
     width: 20px; /* Smaller arrows */
   }
 
+  .section-divider {
+    height: 80px;
+  }
+
   .section-divider h2 {
     font-size: 24px;
+  }
+
+  .section-divider img {
+    width: 200px;
   }
 
   .employee-name {
