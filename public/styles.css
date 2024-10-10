@@ -30,6 +30,7 @@ body {
   justify-content: center;
 }
 
+
 #logo {
   width: 329px;
   height: auto;
@@ -479,4 +480,297 @@ footer a {
 
 footer a:hover {
   color: #005cbf;
+}
+
+
+/* Responsive Design */
+
+/* Special Breakpoint */
+@media (max-width: 1380px) {
+  .header-bottom-bar-container h2 {
+    font-size: 84px;
+  }
+}
+
+/* First Breakpoint: For screens smaller than 1200px */
+@media (max-width: 1200px) {
+
+  #logo-elipse {
+    width: 200px;
+    height: 200px;
+  }
+
+  #logo {
+    width: 195px;
+  }
+
+  .navbar {
+    height: 150px;
+  }
+
+  .navbar a {
+    font-size: 28px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  .header-bottom-bar-container {
+    height: 150px;
+  }
+
+  .header-bottom-bar-container h2 {
+    font-size: 60px;
+  }
+
+  .section-divider h2 {
+    font-size: 60px;
+  }
+
+  .employee-name {
+    font-size: 32px;
+  }
+
+  .employee-title {
+    font-size: 20px;
+  }
+
+  .fun-facts {
+    font-size: 48px;
+    margin-left: 200px;
+  }
+
+  .fact-display {
+    font-size: 1.25rem;
+  }
+
+  .contact-info {
+    font-size: 28px;
+  }
+}
+
+/* Second Breakpoint: For screens smaller than 992px */
+
+@media (max-width: 992px) {
+  #logo-elipse {
+    width: 150px;
+    height: 150px;
+  }
+
+  #logo {
+    width: 145px;
+  }
+
+  .navbar {
+    height: 120px;
+  }
+
+  .nav-link {
+    height: 120px;
+  }
+
+  .navbar a {
+    font-size: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+  }
+
+  .header-bottom-bar-container {
+    height: 120px;
+  }
+
+  .header-bottom-bar-container h2 {
+    font-size: 48px;
+  }
+
+  .section-divider h2 {
+    font-size: 60px;
+  }
+
+  .employee-name {
+    font-size: 28px;
+  }
+
+  .employee-title {
+    font-size: 18px;
+  }
+
+  .fun-facts {
+    font-size: 40px;
+    margin-left: 100px;
+  }
+
+  .fact-display {
+    font-size: 1rem;
+  }
+
+  .contact-info {
+    font-size: 24px;
+  }
+
+  .footer {
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .footer-logo {
+    position: static;
+    margin-top: 20px;
+  }
+}
+
+/* Third Breakpoint: For screens smaller than 768px */
+
+@media (max-width: 768px) {
+  .navbar a {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .header-bottom-bar-container {
+    height: 100px;
+  }
+
+  .header-bottom-bar-container h2 {
+    font-size: 36px;
+  }
+
+  .section-divider h2 {
+    font-size: 36px;
+  }
+
+  .employee-name {
+    font-size: 24px;
+  }
+
+  .employee-title {
+    font-size: 16px;
+  }
+
+  .fun-facts {
+    font-size: 32px;
+    margin-left: 50px;
+  }
+
+  .fact-display {
+    font-size: 0.875rem;
+  }
+
+  .contact-info {
+    font-size: 20px;
+  }
+
+  .footer {
+    height: auto;
+    padding: 20px 5px;
+  }
+
+  .footer-logo {
+    position: static;
+    margin-top: 10px;
+  }
+}
+
+/* Fourth Breakpoint: For screens smaller than 576px */
+
+@media (max-width: 576px) {
+  .navbar a {
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .header-bottom-bar-container {
+    height: 80px;
+  }
+
+  .header-bottom-bar-container h2 {
+    font-size: 24px;
+  }
+
+  .section-divider h2 {
+    font-size: 24px;
+  }
+
+  .employee-name {
+    font-size: 20px;
+  }
+
+  .employee-title {
+    font-size: 14px;
+  }
+
+  .fun-facts {
+    font-size: 24px;
+    margin-left: 20px;
+  }
+
+  .fact-display {
+    font-size: 0.75rem;
+  }
+
+  .contact-info {
+    font-size: 16px;
+  }
+
+  .footer {
+    height: auto;
+    padding: 10px 5px;
+  }
+
+  .footer-logo {
+    position: static;
+    margin-top: 5px;
+  }
+}
+
+/* Fifth Breakpoint: For screens smaller than 420px */
+
+@media (max-width: 420px) {
+  .navbar a {
+    font-size: 14px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .header-bottom-bar-container h2 {
+    font-size: 28px;
+  }
+
+  .section-divider h2 {
+    font-size: 28px;
+  }
+
+  .employee-name {
+    font-size: 18px;
+  }
+
+  .employee-title {
+    font-size: 12px;
+  }
+
+  .fun-facts {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .fact-display {
+    font-size: 0.625rem;
+  }
+
+  .contact-info {
+    font-size: 14px;
+  }
+
+  .footer {
+    height: auto;
+    padding: 5px 2px;
+  }
+
+  .footer-logo {
+    position: static;
+    margin-top: 2px;
+  }
 }
