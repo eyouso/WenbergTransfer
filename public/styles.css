@@ -161,6 +161,41 @@ body {
   line-height: normal;
 }
 
+/* Ensure the parent container of the arrow is positioned relative */
+.row {
+  position: relative;
+}
+
+.arrow-container-1 {
+  position: absolute;
+  top: 38%; /* Adjust to your desired vertical position */
+  left: 25%; /* Adjust to your desired horizontal position */
+  transform: translate(-50%, -50%); /* Center the arrow within the container */
+  z-index: 10; /* Ensure the arrow is on top of other content */
+}
+
+.arrow-container-2 {
+  position: absolute;
+  top: 38%; /* Adjust to your desired vertical position */
+  left: 50%; /* Adjust to your desired horizontal position */
+  transform: translate(-50%, -50%); /* Center the arrow within the container */
+  z-index: 10; /* Ensure the arrow is on top of other content */
+}
+
+.arrow-container-3 {
+  position: absolute;
+  top: 38%; /* Adjust to your desired vertical position */
+  left: 75%; /* Adjust to your desired horizontal position */
+  transform: translate(-50%, -50%); /* Center the arrow within the container */
+  z-index: 10; /* Ensure the arrow is on top of other content */
+}
+
+.arrow {
+  width: 79px; /* Adjust the width of the arrow as needed */
+  height: auto;
+}
+
+
 .section-divider {
   display: flex; /* Use flexbox for alignment */
   background-color: #21375b; /* Dark blue background */
