@@ -488,6 +488,10 @@ footer a:hover {
     font-size: 84px;
   }
 
+  .header img {
+    max-height: 500px;
+  }
+
   .important-person img {
     width: 200px;
   }
@@ -522,6 +526,10 @@ footer a:hover {
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 30px;
+  }
+
+  .header img {
+    max-height: 400px;
   }
 
   .header-bottom-bar-container {
@@ -597,6 +605,10 @@ footer a:hover {
     margin-top: 50px;
   }
 
+  .header img {
+    max-height: 350px;
+  }
+
   .header-bottom-bar-container {
     height: 120px;
   }
@@ -662,6 +674,10 @@ footer a:hover {
     margin-right: 20px;
   }
 
+  .header img {
+    max-height: 300px;
+  }
+
   .header-bottom-bar-container {
     height: 100px;
   }
@@ -725,6 +741,10 @@ footer a:hover {
     font-size: 16px;
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .header img {
+    max-height: 250px;
   }
 
   .header-bottom-bar-container {
