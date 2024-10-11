@@ -548,6 +548,14 @@ footer a:hover {
     margin-left: 35px;
     margin-right: 33px;
   }
+
+  #current-employees-box {
+    height: 150px;
+  }
+
+  #current-employees-title {
+    font-size: 84px;
+  }
 }
 
 /* First Breakpoint: For screens smaller than 1200px */
@@ -646,6 +654,14 @@ footer a:hover {
     width: 290px;
     margin-left: 35px;
     margin-right: 33px;
+  }
+
+  #current-employees-box {
+    height: 120px;
+  }
+
+  #current-employees-title {
+    font-size: 60px;
   }
 
   .employee-name {
@@ -771,6 +787,14 @@ footer a:hover {
     width: 260px;
     margin-left: 35px;
     margin-right: 33px;
+  }
+
+  #current-employees-box {
+    height: 100px;
+  }
+
+  #current-employees-title {
+    font-size: 48px;
   }
 
   .employee-name {
@@ -905,6 +929,14 @@ footer a:hover {
     margin-right: 20px;
   }
 
+  #current-employees-box {
+    height: 80px;
+  }
+
+  #current-employees-title {
+    font-size: 36px;
+  }
+
   .employee-name {
     font-size: 24px;
   }
@@ -1025,6 +1057,14 @@ footer a:hover {
     width: 160px;
     margin-left: 12px;
     margin-right: 16px;
+  }
+
+  #current-employees-box {
+    height: 60px;
+  }
+
+  #current-employees-title {
+    font-size: 24px;
   }
 
   .employee-name {
