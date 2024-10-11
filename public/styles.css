@@ -349,6 +349,7 @@ body {
   font-weight: 700;
   line-height: normal;
   margin: 0; /* Remove default margin */
+  white-space: nowrap;
 }
 
 .employee-title {
@@ -362,7 +363,7 @@ body {
 }
 
 .employee-img {
-  width: 100%; /* Ensure the image takes up the full column width */
+  width: 95%; /* Ensure the image takes up the full column width */
   height: auto; /* Maintain the aspect ratio */
   object-fit: cover; /* Ensures the image fits the container while maintaining aspect ratio */
   border-radius: 20px;
@@ -480,6 +481,15 @@ footer a:hover {
     width: 600px;
     height: auto;
   }
+
+  .employee-name {
+    font-size: 28px;
+  }
+
+  .employee-title {
+    font-size: 16px;
+  }
+
 }
 
 /* 0th Breakpoint */
@@ -556,6 +566,15 @@ footer a:hover {
   #current-employees-title {
     font-size: 84px;
   }
+
+  .employee-name {
+    font-size: 24px;
+  }
+
+  .employee-title {
+    font-size: 12px;
+  }
+
 }
 
 /* First Breakpoint: For screens smaller than 1200px */
@@ -665,11 +684,11 @@ footer a:hover {
   }
 
   .employee-name {
-    font-size: 32px;
+    font-size: 18px;
   }
 
   .employee-title {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .fun-facts {
@@ -798,11 +817,15 @@ footer a:hover {
   }
 
   .employee-name {
-    font-size: 28px;
+    font-size: 16px;
   }
 
   .employee-title {
-    font-size: 18px;
+    font-size: 12px;
+  }
+
+  .employee-img {
+    height: auto;
   }
 
   .fun-facts {
@@ -938,7 +961,7 @@ footer a:hover {
   }
 
   .employee-name {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .employee-title {
@@ -1068,7 +1091,7 @@ footer a:hover {
   }
 
   .employee-name {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .employee-title {
