@@ -1223,48 +1223,5 @@ footer a:hover {
 /* Fifth Breakpoint: For screens smaller than 420px */
 
 @media (max-width: 420px) {
-  .navbar a {
-    font-size: 14px;
-    margin-left: 2px;
-    margin-right: 2px;
-  }
-
-  .header-bottom-bar-container h2 {
-    font-size: 28px;
-  }
-
-  .section-divider h2 {
-    font-size: 28px;
-  }
-
-  .employee-name {
-    font-size: 18px;
-  }
-
-  .employee-title {
-    font-size: 12px;
-  }
-
-  .fun-facts {
-    font-size: 20px;
-    margin-left: 10px;
-  }
-
-  .fact-display {
-    font-size: 0.625rem;
-  }
-
-  .contact-info {
-    font-size: 14px;
-  }
-
-  .footer {
-    height: auto;
-    padding: 5px 2px;
-  }
-
-  .footer-logo {
-    position: static;
-    margin-top: 2px;
-  }
+  /* Need testing on this size */
 }
