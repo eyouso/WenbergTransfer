@@ -1,45 +1,31 @@
-let facts = [];
-let currentIndex = 0;
-let interval;
+document.addEventListener("DOMContentLoaded", function () {
+  // Array of GIFs
+  const gifs = [
+    "assets/fact-gifs/fact-gif-1.gif",
+    "assets/fact-gifs/fact-gif-2.gif",
+    "assets/fact-gifs/fact-gif-3.gif",
+    "assets/fact-gifs/fact-gif-4.gif",
+    "assets/fact-gifs/fact-gif-5.gif",
+  ];
 
-// Fetch the facts from the JSON file
-fetch('/data/facts.json')  // Correct path for facts.json
-  .then(response => response.json())
-  .then(data => {
-    facts = data;
-    showFact(currentIndex);
-    startAutoScroll();  // Start automatic scroll
-  });
+  const truckGif = document.getElementById("truck-gif");
+  let currentIndex = 0;
 
-// Display the current fact
-function showFact(index) {
-  const factDisplay = document.getElementById('fact-display');
-  factDisplay.textContent = facts[index].fact;
-}
+  function showGif(index) {
+    truckGif.src = gifs[index];
 
-// Move to the next fact
-function nextFact() {
-  currentIndex = (currentIndex + 1) % facts.length;  // Loop back to the start
-  showFact(currentIndex);
-  resetAutoScroll();
-}
+    // Restart the animation
+    truckGif.style.animation = "none";
+    void truckGif.offsetWidth; // Trigger reflow to restart the animation
+    truckGif.style.animation = "drive 15s linear forwards";
 
-// Move to the previous fact
-function prevFact() {
-  currentIndex = (currentIndex - 1 + facts.length) % facts.length;  // Loop to the last fact
-  showFact(currentIndex);
-  resetAutoScroll();
-}
+    // Move to the next GIF after the current one finishes (15 seconds total)
+    setTimeout(function () {
+      currentIndex = (currentIndex + 1) % gifs.length; // Loop back to the first GIF
+      showGif(currentIndex); // Recursively show the next GIF
+    }, 15000);
+  }
 
-// Automatically scroll facts every 5 seconds
-function startAutoScroll() {
-  interval = setInterval(() => {
-    nextFact();
-  }, 10000);  // Change interval as needed (5000 ms = 5 seconds)
-}
-
-// Reset the auto scroll when manual navigation occurs
-function resetAutoScroll() {
-  clearInterval(interval);
-  startAutoScroll();
-}
+  // Start the loop with the first GIF
+  showGif(currentIndex);
+});
