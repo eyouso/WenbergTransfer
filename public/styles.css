@@ -902,7 +902,7 @@ footer a:hover {
     gap: 10px;
   }
 
-  img.d-block.w-100 {
+  img.d-block.w-100.feature {
     width: 50% !important; /* Forcefully override Bootstrap's width */
     margin: 0 auto; /* Optional: center the image if you reduce its width */
   }
