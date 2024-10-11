@@ -1,4 +1,9 @@
 /* General Styles */
+
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Poppins", Arial, serif;
   font-weight: 400;
