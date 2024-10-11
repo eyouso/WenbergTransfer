@@ -398,7 +398,7 @@ body {
   position: absolute;
   width: 1051px; /* Adjust the size of the truck */
   bottom: 0px; /* Align the truck to the bottom of the container */
-  left: -1191px; /* Start off the screen */
+  left: -1051px; /* Start off the screen */
   transform: translateY(+3%);
   animation: drive 15s linear forwards; /* Animate for 15 seconds total */
   z-index: 2; /* Ensure the truck is on top of the footer */
@@ -406,7 +406,8 @@ body {
 
 @keyframes drive {
   0% {
-    left: -1191px; /* Start off-screen */
+    /* left: -1191px;  Start off-screen */
+    right: 0%; /* Start off-screen */
   }
   12% {
     left: 25%; /* Drive to the stopping position */
@@ -488,6 +489,15 @@ footer a:hover {
 
   .employee-title {
     font-size: 16px;
+  }
+
+  .truck-container {
+    height: 300px;
+  }
+
+  #truck-gif {
+    width: 900px;
+    left: -900px;
   }
 
 }
@@ -573,6 +583,15 @@ footer a:hover {
 
   .employee-title {
     font-size: 12px;
+  }
+
+  .truck-container {
+    height: 240px;
+  }
+
+  #truck-gif {
+    width: 750px;
+    left: -750px;
   }
 
 }
@@ -693,7 +712,6 @@ footer a:hover {
 
   .fun-facts {
     font-size: 48px;
-    margin-left: 200px;
   }
 
   .fact-display {
@@ -702,6 +720,15 @@ footer a:hover {
 
   .contact-info {
     font-size: 28px;
+  }
+
+  .truck-container {
+    height: 200px;
+  }
+
+  #truck-gif {
+    width: 600px;
+    left: -600px;
   }
 }
 
@@ -830,16 +857,25 @@ footer a:hover {
 
   .fun-facts {
     font-size: 40px;
-    margin-left: 100px;
   }
 
   .fact-display {
     font-size: 1rem;
   }
 
+  .truck-container {
+    height: 160px;
+  }
+
+  #truck-gif {
+    width: 500px;
+    left: -500px;
+  }
+
   .contact-info {
     font-size: 24px;
   }
+
 
   .footer {
     height: auto;
@@ -969,12 +1005,16 @@ footer a:hover {
   }
 
   .fun-facts {
-    font-size: 32px;
-    margin-left: 50px;
+    font-size: 36px;
   }
 
-  .fact-display {
-    font-size: 0.875rem;
+  .truck-container {
+    height: 110px;
+  }
+
+  #truck-gif {
+    width: 350px;
+    left: -350px;
   }
 
   .contact-info {
@@ -1099,12 +1139,7 @@ footer a:hover {
   }
 
   .fun-facts {
-    font-size: 24px;
-    margin-left: 20px;
-  }
-
-  .fact-display {
-    font-size: 0.75rem;
+    font-size: 30px;
   }
 
   .contact-info {
