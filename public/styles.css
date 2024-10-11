@@ -461,6 +461,11 @@ body {
   right: 20px; /* Position the logo to the right side */
 }
 
+.footer-logo img {
+  width: 300px;
+  height: auto;
+}
+
 footer a {
   color: white;
   margin: 0 5px;
@@ -498,6 +503,22 @@ footer a:hover {
   #truck-gif {
     width: 900px;
     left: -900px;
+  }
+
+  #wenberg-transfer-inc {
+    font-size: 28px;
+  }
+
+  .contact-info {
+    font-size: 28px;
+  }
+
+  .footer {
+    height: 300px;
+  }
+
+  .footer-logo img{
+    width: 250px;
   }
 
 }
@@ -592,6 +613,22 @@ footer a:hover {
   #truck-gif {
     width: 750px;
     left: -750px;
+  }
+
+  #wenberg-transfer-inc {
+    font-size: 24px;
+  }
+
+  .contact-info {
+    font-size: 24px;
+  }
+
+  .footer {
+    height: 250px;
+  }
+
+  .footer-logo img{
+    width: 225px;
   }
 
 }
@@ -729,6 +766,22 @@ footer a:hover {
   #truck-gif {
     width: 600px;
     left: -600px;
+  }
+
+  #wenberg-transfer-inc {
+    font-size: 20px;
+  }
+
+  .contact-info {
+    font-size: 20px;
+  }
+
+  .footer {
+    height: 225px;
+  }
+
+  .footer-logo img{
+    width: 200px;
   }
 }
 
@@ -872,19 +925,20 @@ footer a:hover {
     left: -500px;
   }
 
-  .contact-info {
-    font-size: 24px;
+  #wenberg-transfer-inc {
+    font-size: 16px;
   }
 
+  .contact-info {
+    font-size: 16px;
+  }
 
   .footer {
-    height: auto;
-    padding: 20px 10px;
+    height: 200px;
   }
 
-  .footer-logo {
-    position: static;
-    margin-top: 20px;
+  .footer-logo img{
+    width: 150px;
   }
 }
 
@@ -1017,18 +1071,20 @@ footer a:hover {
     left: -350px;
   }
 
+  #wenberg-transfer-inc {
+    font-size: 14px;
+  }
+
   .contact-info {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .footer {
-    height: auto;
-    padding: 20px 5px;
+    height: 150px;
   }
 
-  .footer-logo {
-    position: static;
-    margin-top: 10px;
+  .footer-logo img{
+    width: 105px;
   }
 }
 
@@ -1142,18 +1198,25 @@ footer a:hover {
     font-size: 30px;
   }
 
+  #wenberg-transfer-inc {
+    font-size: 14px;
+  }
+
   .contact-info {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .footer {
-    height: auto;
-    padding: 10px 5px;
+    height: 150px;
   }
 
   .footer-logo {
-    position: static;
-    margin-top: 5px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .footer-logo img{
+    width: 75px;
   }
 }
 
