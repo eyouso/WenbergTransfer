@@ -480,6 +480,15 @@ footer a:hover {
   color: #005cbf;
 }
 
+#youso-creative {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
 /* Responsive Design */
 
 /* Super Special BreakPoint */
@@ -524,6 +533,10 @@ footer a:hover {
 
   .footer-logo img{
     width: 250px;
+  }
+
+  #youso-creative {
+    font-size: 20px;
   }
 
 }
@@ -634,6 +647,10 @@ footer a:hover {
 
   .footer-logo img{
     width: 225px;
+  }
+
+  #youso-creative {
+    font-size: 18px;
   }
 
 }
@@ -760,10 +777,6 @@ footer a:hover {
     font-size: 1.25rem;
   }
 
-  .contact-info {
-    font-size: 28px;
-  }
-
   .truck-container {
     height: 200px;
   }
@@ -787,6 +800,10 @@ footer a:hover {
 
   .footer-logo img{
     width: 200px;
+  }
+
+  #youso-creative {
+    font-size: 14px;
   }
 }
 
@@ -945,6 +962,10 @@ footer a:hover {
   .footer-logo img{
     width: 150px;
   }
+
+  #youso-creative {
+    font-size: 12px;
+  }
 }
 
 /* Third Breakpoint: For screens smaller than 768px */
@@ -1091,6 +1112,10 @@ footer a:hover {
   .footer-logo img{
     width: 105px;
   }
+
+  #youso-creative {
+    font-size: 10px;
+  }
 }
 
 /* Fourth Breakpoint: For screens smaller than 576px */
@@ -1204,6 +1229,7 @@ footer a:hover {
   }
 
   #wenberg-transfer-inc {
+    margin-top: 10px;
     font-size: 14px;
   }
 
@@ -1222,6 +1248,10 @@ footer a:hover {
 
   .footer-logo img{
     width: 75px;
+  }
+
+  #youso-creative {
+    font-size: 10px;
   }
 }
 
