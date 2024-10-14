@@ -298,6 +298,10 @@ body {
   width: 100%;
 }
 
+#jessa-quote-box {
+  margin-left: 50px;
+}
+
 #quote-image-1 {
   width: 439px;
   margin-left: 17px;
@@ -1046,6 +1050,10 @@ footer a:hover {
   .quote-box {
     width: 90%;
     padding: 10px;
+  }
+
+  #jessa-quote-box {
+    margin-left: auto;
   }
 
   #quote-image-1 {
