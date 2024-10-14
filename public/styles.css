@@ -1371,6 +1371,10 @@ footer a:hover {
     padding: 10px;
   }
 
+  #jessa-quote-box {
+    width: 80%;
+  }
+
   #current-employees-box {
     height: 48px;
     padding: 0;
