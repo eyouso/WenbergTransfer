@@ -119,6 +119,14 @@ body {
   border: 4px solid #21375b;
 }
 
+.large-carousel-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Important People Section */
 
 #important-people-section {
@@ -1176,8 +1184,13 @@ footer a:hover {
     width: 200px;
   }
 
+  img.d-block.w-100.feature {
+    width: 90% !important; /* Forcefully override Bootstrap's width */
+    margin: 0 auto; /* Optional: center the image if you reduce its width */
+  }
+
   .quote {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .quote-box {
@@ -1257,11 +1270,161 @@ footer a:hover {
 
 /* Fifth Breakpoint: For screens smaller than 420px */
 
-@media (max-width: 420px) {
-  /* Need testing on this size */
+@media (max-width: 450px) {
+  #logo-elipse {
+    width: 100px;
+    height: 100px;
+  }
+
+  #logo {
+    width: 95px;
+  }
+
+  .navbar {
+    height: 80px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+
+  .header img {
+    max-height: 200px;
+  }
+
+  .header-bottom-bar-container {
+    height: 60px;
+  }
+
+  .header-bottom-bar-container h2 {
+    font-size: 24px;
+  }
+
+  .important-person {
+    width: 50%; /* Forces 2 columns */
+    display: inline-block; /* Makes sure the columns align horizontally */
+  }
+
+  .important-person img {
+    width: 125px;
+  }
+
+  .name {
+    font-size: 18px;
+  }
+
+  .personal-info {
+    font-size: 18px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .row {
+    margin-bottom: 10px;
+  }
+
+  .section-divider {
+    height: 60px;
+  }
+
+  .section-divider h2 {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+
+  .section-divider img {
+    width: 170px;
+  }
+
+  img.d-block.w-100.feature {
+    width: 90% !important; /* Forcefully override Bootstrap's width */
+    margin: 0 auto; /* Optional: center the image if you reduce its width */
+  }
+
+  .featurette-heading {
+    font-size: 18px;
+  }
+
+  .lead {
+    font-size: 12px;
+  }
+
+  .quote {
+    font-size: 12px;
+  }
+
+  .quote-box {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #current-employees-box {
+    height: 48px;
+    padding: 0;
+  }
+
+  #current-employees-title {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .employee-name {
+    font-size: 16px;
+  }
+
+  .employee-title {
+    font-size: 12px;
+  }
+
+  .employee-img {
+    height: auto;
+  }
+
+  .fun-facts {
+    font-size: 24px;
+  }
+
+  .truck-container {
+    max-height: 100px;
+  }
+
+  #truck-gif {
+    max-width: 250px;
+    left: -250px;
+  }
+
+  .footer {
+    height: 150px;
+  }
+
+  .footer a {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .footer-logo img{
+    width: 70px;
+  }
+
+  #wenberg-transfer-inc {
+    font-size: 12px;
+  }
+
+  #youso-creative {
+    font-size: 10px;
+  }
+
+  .contact-info {
+    font-size: 10px;
+  }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
   #logo-elipse {
     width: 100px;
     height: 100px;
@@ -1376,13 +1539,6 @@ footer a:hover {
     height: auto;
   }
 
-  #carouselExample {
-    max-width: 280px;
-    height: auto;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-  }
-
   .fun-facts {
     font-size: 24px;
   }
@@ -1393,7 +1549,7 @@ footer a:hover {
 
   #truck-gif {
     max-width: 220px;
-    left: -250px;
+    left: -220px;
   }
 
   .footer {
