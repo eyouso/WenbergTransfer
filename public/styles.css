@@ -1260,3 +1260,164 @@ footer a:hover {
 @media (max-width: 420px) {
   /* Need testing on this size */
 }
+
+@media (max-width: 320px) {
+  #logo-elipse {
+    width: 100px;
+    height: 100px;
+  }
+
+  #logo {
+    width: 95px;
+  }
+
+  .navbar {
+    height: 80px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+
+  .header img {
+    max-height: 200px;
+  }
+
+  .header-bottom-bar-container {
+    height: 60px;
+  }
+
+  .header-bottom-bar-container h2 {
+    font-size: 18px;
+  }
+
+  .important-person {
+    width: 50%; /* Forces 2 columns */
+    display: inline-block; /* Makes sure the columns align horizontally */
+  }
+
+  .important-person img {
+    width: 100px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .personal-info {
+    font-size: 14px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .row {
+    margin-bottom: 10px;
+  }
+
+  .section-divider {
+    height: 60px;
+  }
+
+  .section-divider h2 {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  .section-divider img {
+    width: 150px;
+  }
+
+  img.d-block.w-100.feature {
+    width: 90% !important; /* Forcefully override Bootstrap's width */
+    margin: 0 auto; /* Optional: center the image if you reduce its width */
+  }
+
+  .featurette-heading {
+    font-size: 16px;
+  }
+
+  .lead {
+    font-size: 10px;
+  }
+
+  .quote {
+    font-size: 10px;
+  }
+
+  .quote-box {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #current-employees-box {
+    height: 40px;
+    padding: 0;
+  }
+
+  #current-employees-title {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .employee-name {
+    font-size: 14px;
+  }
+
+  .employee-title {
+    font-size: 10px;
+  }
+
+  .employee-img {
+    height: auto;
+  }
+
+  #carouselExample {
+    max-width: 280px;
+    height: auto;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .fun-facts {
+    font-size: 24px;
+  }
+
+  .truck-container {
+    max-height: 80px;
+  }
+
+  #truck-gif {
+    max-width: 220px;
+    left: -250px;
+  }
+
+  .footer {
+    height: 150px;
+  }
+
+  .footer a {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .footer-logo img{
+    width: 50px;
+  }
+
+  #wenberg-transfer-inc {
+    font-size: 12px;
+  }
+
+  #youso-creative {
+    font-size: 10px;
+  }
+
+  .contact-info {
+    font-size: 10px;
+  }
+}
