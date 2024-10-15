@@ -42,6 +42,11 @@ app.get("/about", (req, res) => {
   res.render("about.ejs");
 })
 
+app.get('/sitemap.xml', (req, res) => {
+  const sitemapPath = path.join(__dirname, 'sitemap.xml');
+  res.sendFile(sitemapPath);
+});
+
 app.get("/merch", (req, res) => {
   res.render("merch.ejs");
 })
