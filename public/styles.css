@@ -63,6 +63,11 @@ body {
   line-height: normal;
 }
 
+.nav-link:visited {
+  color: inherit; /* Or specify the color you want */
+  text-decoration: none; /* Optional, to control underlining */
+}
+
 /* Banner Box */
 .header {
   width: 100%; /* Make the header take up full width */

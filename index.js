@@ -34,14 +34,6 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/contact", (req, res) => {
-  res.render("contact.ejs");
-})
-
-app.get("/about", (req, res) => {
-  res.render("about.ejs");
-})
-
 app.get('/sitemap.xml', (req, res) => {
   const sitemapPath = path.join(__dirname, 'sitemap.xml');
   res.sendFile(sitemapPath);
