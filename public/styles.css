@@ -396,6 +396,12 @@ body {
 
 /* Facts Section */
 
+#fun-facts-section {
+  background-image: url('/assets/images/Fact-Truck-Background.png');
+  background-size: cover;
+  background-position: center;
+}
+
 .fun-facts {
   margin-top: 100px;
   color: #21375b;
@@ -445,8 +451,12 @@ body {
 
 /* Footer */
 .footer {
-  background-color: #21375b;
-  border: 2px solid #82b0fc;
+  /*background-color: #21375b; */
+  background-color:  #5E7478;
+  /*border: 2px solid #82b0fc; */
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+
   height: 350px;
   color: white;
   padding: 20px;
